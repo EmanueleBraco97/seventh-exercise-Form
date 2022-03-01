@@ -16,48 +16,52 @@
 <body>
     <form action="Registrazione">
         <h2>Registrazione: Dati anagrafici</h2>
-        <label for="Nome">Nome:</label>
-        <input type="text" id="Nome" name="Nome" placeholder="inserisci nome">
-        <label for="Cognome">Cognome:</label>
-        <input type="text" id="Cognome" name="Cognome" placeholder="inserisci cognome">
-        <label for="Email">Email:</label>
-        <input type="email" name="Email" id="Email" placeholder="inserisci email">
-        <label for="Password">Password:</label>
-        <input type="password" name="Password" id="Password" placeholder="inserisci password">
-        <label for="date">Data di nascita:</label>
-        <input type="date" name="data di nascita" id="data di nascita">
-        <label for="Numero di telefono">Numero di Telefono:</label>
-        <input type="number" value="numero di telefono" id="numero di telefono">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="Nome" placeholder="inserisci nome">
+        <label for="cognome">Cognome:</label>
+        <input type="text" id="cognome" name="Cognome" placeholder="inserisci cognome">
+        <label for="email">Email:</label>
+        <input type="email" name="Email" id="email" placeholder="inserisci email">
+        <label for="password">Password:</label>
+        <input type="password" name="Password" id="password" placeholder="inserisci password">
+        <label for="data">Data di nascita:</label>
+        <input type="date" name="data di nascita" id="data">
+        <label for="numero-telefono">Numero di Telefono:</label>
+        <input type="number" value="numero di telefono" id="numero-telefono">
         <h2>Che piano di abbonamento hai?</h2>
-        <label for="VISA">VISA</label>
-        <input type="radio" value="VISA" id="VISA">
-        <label for="MASTERCARD">MASTERCARD</label>
-        <input type="radio" value="MASTERCARD" id="MASTERCARD">
-        <label for="AMERICAN EXPRESS">AMERICAN EXPRESS</label>
-        <input type="radio" value="AMERICAN EXPRESS" id="AMERICAN EXPRESS">
+        <div>
+            <label for="plan">Piano di abbonamento</label>
+            <select id="plan" name="plan">
+			<option value="0">Free</option>
+			<optgroup label="Mensili">
+				<option value="199">1.99€/mese</option>
+				<option value="599">5.99€/mese</option>
+				<option value="1199">11.99€/mese</option>
+			</optgroup>
+		</select>
+            <label for="piano-pro">Piano PRO</label>
+            <input id="piano-pro" name="pro" type="checkbox" required/>
+        </div>
         <label for="ccn">Numero carta di credito:</label>
         <input type="tel" id="ccn" inputmode="numeric" pattern="[0-9\s]{13,19}" maxlength="19" placeholder="xxxx xxxx xxxx xxxx">
         <label for="cvc">ultime 3 cifre CVC:</label>
         <input type="number" id="cvc" inputmode="numeric" maxlength="3" placeholder="xxx">
-        <label for="scadenza">scadenza:</label>
-        <input type="date" id="data">
+        <label for="data-scadenza">scadenza:</label>
+        <input type="date" id="data-scadenza">
 
         <h2>Indirizzo di fatturazione</h2>
-        <label for="Nome e Cognome">Nome e Cognome:</label>
-        <input type="text" id="Nome e Cognome" placeholder="inserisci nome e cognome">
-        <label for="Email">Email:</label>
-        <input type="email" name="Email" id="Email" placeholder="Es.pincopallino@example.it">
-        <label for="Indirizzo">Indirizzo:</label>
-        <input type="text" id="Indirizzo" placeholder="via mario rossi 10">
-        <label for="Citta">Citta:</label>
+        <label for="nome-cognome">Nome e Cognome:</label>
+        <input type="text" id="nome-cognome" placeholder="inserisci nome e cognome">
+        <label for="email">Email:</label>
+        <input type="email" name="Email" id="email" placeholder="Es.pincopallino@example.it">
+        <label for="indirizzo">Indirizzo:</label>
+        <input type="text" id="indirizzo" placeholder="via mario rossi 10">
+        <label for="citta">Citta:</label>
         <input type="text" name="citta" id="citta" placeholder="Es.Napoli">
-        <label for="Paese/Nazione">Paese/Nazione:</label>
-        <input type="text" name="Paese/Nazione" id="Paese/Nazione" placeholder="Es.Italia">
-        <label for="Codice postale">Codice postale:</label>
-        <input type="number" name="Codice postale" id="Codice postale" placeholder="Es. 80135">
-
-
-
+        <label for="paese/nazione">Paese/Nazione:</label>
+        <input type="text" name="Paese/Nazione" id="paese/nazione" placeholder="Es.Italia">
+        <label for="codice-postale">Codice postale:</label>
+        <input type="number" name="Codice postale" id="codice-postale" placeholder="Es. 80135">
     </form>
 
 </body>
